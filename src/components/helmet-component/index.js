@@ -18,6 +18,9 @@ const HelmetComponent = () => (
     render={data => (
       <Helmet>
         <title>{data.site.siteMetadata.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={data.site.siteMetadata.description} />
+        <meta name="keywords" content={data.site.siteMetadata.keywords} />
       </Helmet>
     )}
   />
