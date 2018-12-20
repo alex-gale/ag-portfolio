@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "author": "Alex Gale",
   "dependencies": {
+    "aos": "^2.3.4",
     "gatsby": "^2.0.53",
     "gatsby-image": "^2.0.20",
     "gatsby-plugin-manifest": "^2.0.9",
@@ -21,7 +22,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop -p 3000",
+    "develop": "gatsby develop -p 3000 -H 192.168.0.68",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\""
   },
