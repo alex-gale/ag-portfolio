@@ -14,18 +14,6 @@ const MainPage = () => (
         </div>
       </div>
     </div>
-    <div className="content">
-      more crazy stuff
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
   </div>
 )
 
