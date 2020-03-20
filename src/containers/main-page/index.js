@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './index.scss'
+import GithubLogo from '../../images/github-icon.svg'
 
 const MainPage = () => (
   <div className="main-page">
@@ -13,6 +14,11 @@ const MainPage = () => (
           <p>Full Stack Web Developer</p>
         </div>
       </div>
+
+			<a href="https://github.com/alex-gale" className="github-link">
+				<img src={GithubLogo} />
+				Visit my GitHub
+			</a>
     </div>
   </div>
 )
