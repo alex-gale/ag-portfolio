@@ -1,21 +1,30 @@
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"),
-       url('../fonts/Roboto-Medium.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.ttf');
-  font-weight: bold;
-}
-
-//@import url('https://fonts.googleapis.com/css?family=Roboto:700i,500');
 @import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 
 * {
   padding: 0;
   margin: 0;
 
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  font-family: 'Sen', sans-serif;
+}
+
+body {
+  background: whitesmoke;
+}
+
+a {
+  color: #3e488a;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #7f0070;
+  }
 }
