@@ -48,6 +48,29 @@ const MainPage = () => (
 				<div className="title">
 					<p>What I Do</p>
 				</div>
+
+				<div className="skills-list-container">
+					<h1 className="skills-list-title">Proficient</h1>
+					<div className="skills-list">
+						<div className="skill">JavaScript</div>
+						<div className="skill">NodeJS</div>
+						<div className="skill">React</div>
+						<div className="skill">Express.js</div>
+						<div className="skill">HTMl & CSS</div>
+						<div className="skill">SCSS</div>
+						<div className="skill">MongoDB</div>
+						<div className="skill">Linux</div>
+						<div className="skill">Git</div>
+					</div>
+
+					<h1 className="skills-list-title">Familiar</h1>
+					<div className="skills-list">
+						<div className="skill">Redis</div>
+						<div className="skill">PHP</div>
+						<div className="skill">MySQL</div>
+						<div className="skill">Java</div>
+					</div>
+				</div>
 			</div>
 		</div>
   </div>

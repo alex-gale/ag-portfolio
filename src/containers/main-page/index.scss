@@ -211,7 +211,7 @@ $fill-width: 775px;
     .tagline-container {
       position: absolute;
       width: 650px;
-      margin-top: 400px;
+      margin-top: 330px;
       text-align: center;
       transform: rotate(-3deg);
 
@@ -268,7 +268,7 @@ $fill-width: 775px;
     .skills-container {
       flex: auto;
       width: 700px;
-      height: 500px;
+      height: 400px;
       position: relative;
       padding-bottom: 20px;
       background-color: white;
@@ -285,6 +285,7 @@ $fill-width: 775px;
 
       @media only screen and (max-width: $fill-width) {
         width: 90%;
+        height: auto;
         padding-left: 10px;
         padding-right: 10px;
         flex-direction: column-reverse;
@@ -300,6 +301,46 @@ $fill-width: 775px;
           left: 0;
           width: 200px;
           text-align: center;
+        }
+      }
+
+      .skills-list-container {
+        margin-top: 60px;
+
+        @media only screen and (max-width: $fill-width) {
+          margin-top: 70px;
+        }
+
+        .skills-list-title {
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .skills-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-left: 20px;
+
+          .skill {
+            font-size: 20px;
+            background-color: #d6d6d6;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-bottom: 5px;
+            padding: 10px;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: darken(#d6d6d6, 20%);
+            }
+
+            @media only screen and (max-width: $fill-width) {
+              font-size: 17px;
+            }
+          }
         }
       }
     }
