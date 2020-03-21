@@ -2,6 +2,7 @@ import React from 'react'
 
 import './index.scss'
 import GithubLogo from '../../images/github-icon.svg'
+import PortraitPhoto from '../../images/portrait.jpg'
 
 const MainPage = () => (
   <div className="main-page">
@@ -33,7 +34,7 @@ const MainPage = () => (
 						<a href="mailto:alex01gale@gmail.com">Let's work together.</a>
 					</div>
 					<div className="image-holder">
-						<img alt="Alex Gale" src="https://www.colonialkc.org/wp-content/uploads/2014/07/Cory-Headshot-Outside-Square.jpg" />
+						<img alt="Alex Gale" src={PortraitPhoto} />
 					</div>
 				</div>
 			</div>
