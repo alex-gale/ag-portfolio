@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AOS from 'aos'
 
+import 'aos/dist/aos.css'
 import './layout.scss'
 import HelmetComponent from './helmet-component'
 

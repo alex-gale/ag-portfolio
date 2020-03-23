@@ -18,8 +18,18 @@ module.exports = {
         icon: 'src/assets/images/logo.png'
       },
     },
+		{
+				resolve: "gatsby-plugin-web-font-loader",
+				options: {
+					custom: {
+						families: ["Oswald", "Permanent Marker", "Sen"],
+						urls: ["/fonts/fonts.css"]
+					}
+				}
+		},
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-netlify',
+		'gatsby-plugin-offline',
   ],
 }
