@@ -99,15 +99,16 @@ const MainPage = () => {
 				<div className="contact-container">
 					<h2>Get in Touch</h2>
 
-					<form className="contact-form" contactname="contact" data-netlify="true">
-						<input placeholder="Your Name" type="text" name="name" />
-						<input placeholder="Your Email" type="text" name="email" />
-						<textarea placeholder="Your Message" type="text" name="message" />
+					<form className="contact-form" action="/submitted" name="Contact" data-netlify="true">
+						<input type="hidden" name="form-name" value="Contact" />
+						<input required={true} placeholder="Your Name" type="text" name="Name" />
+						<input required={true} placeholder="Your Email" type="email" name="Email" />
+						<textarea required={true} placeholder="Your Message" type="text" name="Message" />
 						<button submit={true}>Send</button>
 					</form>
 				</div>
 
-				<p>Made with <span role="img" aria-label="love">❤️</span> with <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">Gatsby</a></p>
+				<p>Made with <span role="img" aria-label="love">❤️</span> using <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">Gatsby</a></p>
 			</div>
 	  </div>
 	)

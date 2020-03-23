@@ -4,7 +4,6 @@ import AOS from 'aos'
 
 import './layout.scss'
 import HelmetComponent from './helmet-component'
-import NavBar from './nav-bar'
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -18,7 +17,6 @@ class Layout extends React.Component {
     return (
       <div>
         <HelmetComponent />
-        <NavBar />
         {this.props.children}
       </div>
     )
