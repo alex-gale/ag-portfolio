@@ -31,7 +31,7 @@ const MainPage = () => {
 				</div>
 	    </div>
 
-			<div className="top-content">
+			<div className="top-content" id="about">
 				<div className="about-container">
 					<div className="box-title">
 						<p>About Me</p>
@@ -83,7 +83,7 @@ const MainPage = () => {
 				</div>
 			</div>
 
-			<div className="projects-container">
+			<div className="projects-container" id="my-work">
 				<div className="box-title">
 					<p>My Work</p>
 				</div>
@@ -93,6 +93,21 @@ const MainPage = () => {
 						<Project key={project.name} image={project.image} name={project.name} description={project.description} link={project.link} />
 					)}
 				</div>
+			</div>
+
+			<div className="footer" id="contact">
+				<div className="contact-container">
+					<h2>Get in Touch</h2>
+
+					<form className="contact-form" contactname="contact" data-netlify="true">
+						<input placeholder="Your Name" type="text" name="name" />
+						<input placeholder="Your Email" type="text" name="email" />
+						<textarea placeholder="Your Message" type="text" name="message" />
+						<button submit={true}>Send</button>
+					</form>
+				</div>
+
+				<p>Made with <span role="img" aria-label="love">❤️</span> with <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">Gatsby</a></p>
 			</div>
 	  </div>
 	)

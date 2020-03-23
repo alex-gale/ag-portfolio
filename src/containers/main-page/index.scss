@@ -101,7 +101,7 @@ $fill-width: 775px;
         }
 
         @media only screen and (max-width: $fill-width) {
-          font-size: 14px;
+          font-size: 13px;
 
           img {
             width: 30px;
@@ -409,7 +409,7 @@ $fill-width: 775px;
       align-items: center;
       width: 1350px;
       margin-top: 50px;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
 
       @media only screen and (max-width: $collapse-width) {
         width: 700px;
@@ -417,6 +417,78 @@ $fill-width: 775px;
 
       @media only screen and (max-width: $fill-width) {
         width: 90%;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 15px;
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
+      margin-bottom: 25px;
+
+      @media only screen and (max-width: 550px) {
+        width: 90%;
+      }
+
+      .contact-form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+
+        input, textarea {
+          font-size: 15px;
+          margin-top: 15px;
+          border: none;
+          border-radius: 5px;
+          outline: none;
+          transition: box-shadow 0.3s;
+          background-color: darken(white, 10%);
+          padding: 10px;
+          width: 90%;
+
+          &:focus {
+            box-shadow: 0px 0px 20px 2.5px rgba(0,0,0,0.26);
+          }
+        }
+
+        textarea {
+          height: 100px;
+          resize: none;
+        }
+
+        button {
+          padding: 10px;
+          width: 200px;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          border-radius: 5px;
+          margin-top: 15px;
+          background-image: linear-gradient(to right, #59004e, #9e008b);
+          color: white;
+          transition: box-shadow 0.3s;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
+          }
+        }
       }
     }
   }
