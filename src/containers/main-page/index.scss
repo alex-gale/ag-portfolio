@@ -22,7 +22,6 @@ $fill-width: 775px;
     position: relative;
     width: 100%;
     height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
     min-height: 300px;
     background: #232323;
     border-bottom: 5px solid #7f0070;
@@ -79,59 +78,89 @@ $fill-width: 775px;
       }
     }
 
-    .github-link {
+    .action-container {
       display: flex;
-      align-items: center;
       position: absolute;
       bottom: 0;
       margin-bottom: 10px;
-      color: black;
-      text-decoration: none;
-      background-color: whitesmoke;
-      padding: 10px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-radius: 10px;
-      transition: background-color 0.3s;
-      user-select: none;
 
-      &:hover {
-        background-color: #c4c4c4;
+      .button {
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s;
+        user-select: none;
+
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 20px;
+        }
+
+        @media only screen and (max-width: $fill-width) {
+          font-size: 14px;
+
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+        }
       }
 
-      img {
-        width: 40px;
-        height: 40px;
+      .github-link {
+        color: black;
+        background-color: whitesmoke;
+
+        &:hover {
+          background-color: darken(whitesmoke, 10%);;
+        }
+      }
+
+      .resume-link {
+        color: white;
+        background-color: #c73a4a;
         margin-right: 20px;
+
+        &:hover {
+          background-color: darken(#c73a4a, 5%);
+        }
+
+        @media only screen and (max-width: $fill-width) {
+          margin-right: 5px;
+        }
       }
     }
   }
 
-  .content {
+  .box-title {
+    position: absolute;
+    background-color: whitesmoke;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: -20px;
+    background-color: whitesmoke;
+    z-index: 3;
+
+    @include skew-box(5px);
+
+    p {
+      font-family: 'Oswald', sans-serif;
+      transform: skewX(10deg);
+    }
+  }
+
+  .top-content {
     display: flex;
-    padding: 20px;
     padding-top: 90px;
+    max-width: 1350px;
 
     @media only screen and (max-width: $collapse-width) {
       flex-direction: column;
       align-items: center;
-    }
-
-    .title {
-      position: absolute;
-      background-color: whitesmoke;
-      font-size: 30px;
-      padding: 10px;
-      margin-top: -20px;
-      margin-left: -10px;
-      background-color: whitesmoke;
-
-      @include skew-box(5px);
-
-      p {
-        font-family: 'Oswald', sans-serif;
-        transform: skewX(10deg);
-      }
     }
 
     .about-container {
@@ -148,9 +177,13 @@ $fill-width: 775px;
         width: 90%;
         max-height: none;
 
-        .title {
+        .box-title {
           display: none;
         }
+      }
+
+      .box-title {
+        margin-left: -10px;
       }
 
       .about-content {
@@ -172,6 +205,7 @@ $fill-width: 775px;
           align-items: center;
           text-align: center;
           margin-top: 20px;
+          width: 100%;
 
           * {
             width: 90%;
@@ -200,6 +234,7 @@ $fill-width: 775px;
           }
 
           img {
+            position: absolute;
             width: 120%;
             height: 120%;
             transform: skewX(10deg);
@@ -291,7 +326,7 @@ $fill-width: 775px;
         flex-direction: column-reverse;
       }
 
-      .title {
+      .box-title {
         right: 0;
         margin-right: -20px;
 
@@ -316,6 +351,10 @@ $fill-width: 775px;
           margin-top: 20px;
           margin-bottom: 20px;
           text-align: center;
+
+          @media only screen and (max-width: $fill-width) {
+            font-size: 25px;
+          }
         }
 
         .skills-list {
@@ -342,6 +381,42 @@ $fill-width: 775px;
             }
           }
         }
+      }
+    }
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 75px;
+    background: #232323;
+    border-top: 5px solid #7f0070;
+    border-bottom: 5px solid #7f0070;
+    border-image: linear-gradient(to right, #59004e, #9e008b);
+    border-image-slice: 1;
+
+    .box-title {
+      background-color: #191919;
+      color: white;
+    }
+
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 1350px;
+      margin-top: 50px;
+      padding-bottom: 50px;
+
+      @media only screen and (max-width: $collapse-width) {
+        width: 700px;
+      }
+
+      @media only screen and (max-width: $fill-width) {
+        width: 90%;
       }
     }
   }
