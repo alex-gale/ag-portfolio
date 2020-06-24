@@ -65,7 +65,7 @@ const MainPage = () => {
 							<div className="skill">NodeJS</div>
 							<div className="skill">React</div>
 							<div className="skill">Express.js</div>
-							<div className="skill">HTMl & CSS</div>
+							<div className="skill">HTML & CSS</div>
 							<div className="skill">SCSS</div>
 							<div className="skill">MongoDB</div>
 							<div className="skill">Linux</div>
