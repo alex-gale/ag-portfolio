@@ -67,17 +67,18 @@ const MainPage = () => {
               <div className='skill'>Express.js</div>
               <div className='skill'>HTML & CSS</div>
               <div className='skill'>SCSS</div>
-              <div className='skill'>MongoDB</div>
+              <div className='skill'>Python</div>
               <div className='skill'>Linux</div>
               <div className='skill'>Git</div>
+              <div className='skill'>Java</div>
             </div>
 
             <h1 className='skills-list-title'>Familiar</h1>
             <div className='skills-list'>
-              <div className='skill'>Redis</div>
               <div className='skill'>PHP</div>
               <div className='skill'>MySQL</div>
-              <div className='skill'>Java</div>
+              <div className='skill'>MongoDB</div>
+              <div className='skill'>WordPress</div>
             </div>
           </div>
         </div>
