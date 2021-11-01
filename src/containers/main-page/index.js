@@ -2,7 +2,6 @@ import React from 'react'
 
 import './index.scss'
 import GithubLogo from '../../assets/images/github-icon.svg'
-import PortraitPhoto from '../../assets/images/portrait.jpg'
 import { projectList } from '../../assets/project-list'
 import Project from '../../components/project'
 
@@ -31,60 +30,7 @@ const MainPage = () => {
         </div>
       </div>
 
-      <div className='top-content' id='about'>
-        <div className='about-container'>
-          <div className='box-title'>
-            <p>About Me</p>
-          </div>
-
-          <div className='about-content'>
-            <div className='about-text'>
-              <p>I'm a Full Stack web developer from Cardiff. My passion is writing clean code to power clean sites.</p>
-              <a href='mailto:alex01gale@gmail.com'>Let's work together.</a>
-            </div>
-            <div className='image-holder'>
-              <img src={PortraitPhoto} alt='Alex Gale' />
-            </div>
-          </div>
-        </div>
-
-        <div className='tagline-container'>
-          <p>clean code</p>
-          <p>clean sites</p>
-        </div>
-
-        <div className='skills-container'>
-          <div className='box-title'>
-            <p>What I Do</p>
-          </div>
-
-          <div className='skills-list-container'>
-            <h1 className='skills-list-title'>Proficient</h1>
-            <div className='skills-list'>
-              <div className='skill'>JavaScript</div>
-              <div className='skill'>NodeJS</div>
-              <div className='skill'>React</div>
-              <div className='skill'>Express.js</div>
-              <div className='skill'>HTML & CSS</div>
-              <div className='skill'>SCSS</div>
-              <div className='skill'>Python</div>
-              <div className='skill'>Linux</div>
-              <div className='skill'>Git</div>
-              <div className='skill'>Java</div>
-            </div>
-
-            <h1 className='skills-list-title'>Familiar</h1>
-            <div className='skills-list'>
-              <div className='skill'>PHP</div>
-              <div className='skill'>MySQL</div>
-              <div className='skill'>MongoDB</div>
-              <div className='skill'>WordPress</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='projects-container' id='my-work'>
+      <div className='projects-container'>
         <div className='box-title'>
           <p>My Work</p>
         </div>
@@ -109,7 +55,7 @@ const MainPage = () => {
           </form>
         </div>
 
-        <p>Made with <span role='img' aria-label='love'>❤️</span> using <a target='_blank' rel='noopener noreferrer' href='https://www.gatsbyjs.org/'>Gatsby</a></p>
+        <p className='love-note'>Made with <span role='img' aria-label='love'>❤️</span> using <a target='_blank' rel='noopener noreferrer' href='https://www.gatsbyjs.org/'>Gatsby</a></p>
       </div>
     </div>
   )

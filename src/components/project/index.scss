@@ -5,7 +5,7 @@
   box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.26);
   background-color: white;
   padding-bottom: 10px;
-  margin-top: 20px;
+  margin: 20px;
   transition: all 0.3s;
 
   &:hover {
@@ -18,6 +18,9 @@
 
   img {
     width: 100%;
+    border-bottom: 2px solid #7f0070;
+    border-image: linear-gradient(to right, #59004e, #9e008b);
+    border-image-slice: 1;
   }
 
   p {

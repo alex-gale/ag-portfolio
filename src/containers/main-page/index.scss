@@ -136,292 +136,44 @@ $fill-width: 775px;
     }
   }
 
-  .box-title {
-    position: absolute;
-    background-color: whitesmoke;
-    font-size: 30px;
-    padding: 10px;
-    margin-top: -20px;
-    background-color: whitesmoke;
-    z-index: 3;
-
-    @include skew-box(5px);
-
-    p {
-      font-family: 'Oswald', sans-serif;
-      transform: skewX(10deg);
-    }
-  }
-
-  .top-content {
-    display: flex;
-    padding-top: 90px;
-    max-width: 1350px;
-
-    @media only screen and (max-width: $collapse-width) {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .about-container {
-      flex: auto;
-      width: 700px;
-      max-height: 240px;
-      padding-bottom: 20px;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
-      z-index: 2;
-
-      @media only screen and (max-width: $fill-width) {
-        width: 90%;
-        max-height: none;
-
-        .box-title {
-          display: none;
-        }
-      }
-
-      .box-title {
-        margin-left: -10px;
-      }
-
-      .about-content {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-        font-size: 20px;
-
-        @media only screen and (max-width: $fill-width) {
-          width: 100%;
-          padding-left: 10px;
-          padding-right: 10px;
-          flex-direction: column-reverse;
-        }
-
-        .about-text {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          margin-top: 20px;
-          width: 100%;
-
-          * {
-            width: 90%;
-
-            @media only screen and (max-width: $fill-width) {
-              flex-direction: column-reverse;
-            }
-          }
-        }
-
-        .image-holder {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          min-width: 200px;
-          max-width: 200px;
-          min-height: 200px;
-          max-height: 200px;
-          background-color: #232323;
-          overflow: hidden;
-
-          @include skew-box(5px);
-
-          @media only screen and (max-width: $fill-width) {
-            margin-top: -40px;
-          }
-
-          img {
-            position: absolute;
-            width: 120%;
-            height: 120%;
-            transform: skewX(10deg);
-          }
-        }
-      }
-    }
-
-    .tagline-container {
-      position: absolute;
-      width: 650px;
-      margin-top: 330px;
-      text-align: center;
-      transform: rotate(-3deg);
-
-      @media only screen and (max-width: $collapse-width) {
-        margin-top: 200px;
-        z-index: 3;
-      }
-
-      @media only screen and (max-width: $fill-width) {
-        display: none;
-      }
-
-      // connecting line
-      &:before {
-        content: '';
-        position: absolute;
-        margin-top: -200px;
-        width: 350px;
-        height: 260px;
-        border-left: 5px dashed black;
-        border-bottom: 5px dashed black;
-        transform: rotate(3deg);
-        z-index: -2;
-
-        @media only screen and (max-width: $collapse-width) {
-          display: none;
-        }
-      }
-
-      // background gradient parallellogram
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-left: 175px;
-        margin-top: 10px;
-        width: 300px;
-        height: 100px;
-        background-color: #9e008b;
-        background-image: linear-gradient(to top right, #59004e, #9e008b);
-        z-index: -1;
-        transform: skewX(20deg);
-        box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
-      }
-
-      p {
-        font-size: 50px;
-        font-family: 'Permanent Marker', cursive;
-        height: 40px;
-      }
-    }
-
-    .skills-container {
-      flex: auto;
-      width: 700px;
-      height: 400px;
-      position: relative;
-      padding-bottom: 20px;
-      background-color: white;
-      border-radius: 20px;
-      box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
-      z-index: 1;
-      margin-top: 150px;
-      margin-left: -50px;
-
-      @media only screen and (max-width: $collapse-width) {
-        margin-left: 0px;
-        margin-top: 30px;
-      }
-
-      @media only screen and (max-width: $fill-width) {
-        width: 90%;
-        height: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-        flex-direction: column-reverse;
-      }
-
-      .box-title {
-        right: 0;
-        margin-right: -20px;
-
-        @media only screen and (max-width: $fill-width) {
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          width: 200px;
-          text-align: center;
-        }
-      }
-
-      .skills-list-container {
-        margin-top: 60px;
-
-        @media only screen and (max-width: $fill-width) {
-          margin-top: 70px;
-        }
-
-        .skills-list-title {
-          margin-left: 20px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          text-align: center;
-
-          @media only screen and (max-width: $fill-width) {
-            font-size: 25px;
-          }
-        }
-
-        .skills-list {
-          display: flex;
-          justify-content: center;
-          flex-wrap: wrap;
-          margin-left: 20px;
-
-          .skill {
-            font-size: 20px;
-            background-color: #d6d6d6;
-            border-radius: 5px;
-            margin-right: 20px;
-            margin-bottom: 5px;
-            padding: 10px;
-            transition: background-color 0.3s;
-
-            &:hover {
-              background-color: darken(#d6d6d6, 20%);
-            }
-
-            @media only screen and (max-width: $fill-width) {
-              font-size: 17px;
-            }
-          }
-        }
-      }
-    }
-  }
-
   .projects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 75px;
-    background: #232323;
-    border-top: 5px solid #7f0070;
     border-bottom: 5px solid #7f0070;
     border-image: linear-gradient(to right, #59004e, #9e008b);
     border-image-slice: 1;
+    box-shadow: inset 0px 20px 20px -10px rgba(0,0,0,0.26),
+                inset 0px -20px 20px -5px rgba(0,0,0,0.26);
 
     .box-title {
-      background-color: #191919;
+      margin-top: 20px;
+      background: #232323;
+      font-size: 30px;
+      padding: 10px;
       color: white;
+  
+      @include skew-box(5px);
+  
+      p {
+        font-family: 'Oswald', sans-serif;
+        transform: skewX(10deg);
+      }
     }
 
     .projects-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
-      width: 1350px;
-      margin-top: 50px;
-      padding-bottom: 25px;
-
-      @media only screen and (max-width: $collapse-width) {
-        width: 700px;
-      }
-
-      @media only screen and (max-width: $fill-width) {
-        width: 90%;
-      }
+      width: 100%;
+      max-width: 1320px;
     }
   }
 
   .footer {
+    background: #232323;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,6 +242,15 @@ $fill-width: 775px;
             box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.26);
           }
         }
+      }
+    }
+
+    .love-note {
+      color: white;
+
+      a {
+        color: white;
+        font-weight: bold;
       }
     }
   }
