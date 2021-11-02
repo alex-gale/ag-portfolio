@@ -2,6 +2,7 @@ import YearlyImage from './images/projects/yearly.jpg'
 import CountdownImage from './images/projects/countdown.jpg'
 import VerseforImage from './images/projects/versefor.jpg'
 import ScunthorpeImage from './images/projects/scunthorpe.jpg'
+import SleepProdImage from './images/projects/sleeprod.jpg'
 
 const projectList = [
   {
@@ -15,6 +16,12 @@ const projectList = [
     description: 'An online mood tracker built with React, Express.js and MongoDB',
     image: YearlyImage,
     link: 'https://github.com/alex-gale/yearly-frontend'
+  },
+  {
+    name: 'Sleep & Productivity Tracker',
+    description: 'Proof of concept sleep and productivity tracker build in React using Agile methodology',
+    image: SleepProdImage,
+    link: 'https://sg2-sleep-tracker.netlify.app'
   },
   {
     name: 'Scunthorpe Scavenger',
