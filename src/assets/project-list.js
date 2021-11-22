@@ -33,7 +33,7 @@ const projectList = [
     name: 'VerseFor.me',
     description: 'Frontend design test for a tagged Bible verse database',
     image: VerseforImage,
-    link: 'https://versefor.me'
+    link: 'https://versefor.galex.cc'
   }
 ]
 
