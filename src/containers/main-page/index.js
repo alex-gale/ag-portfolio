@@ -19,9 +19,9 @@ const MainPage = () => {
         </div>
 
         <div className='action-container'>
-          <a href='https://f.galex.cc/Alex_Gale_Resume.pdf' target='_blank' rel='noopener noreferrer' className='button resume-link'>
+          {/* <a href='https://f.galex.cc/Alex_Gale_Resume.pdf' target='_blank' rel='noopener noreferrer' className='button resume-link'>
             Check out my Resume
-          </a>
+          </a> */}
 
           <a href='https://github.com/alex-gale' target='_blank' rel='noopener noreferrer' className='button github-link'>
             <img alt='GitHub' src={GithubLogo} />
